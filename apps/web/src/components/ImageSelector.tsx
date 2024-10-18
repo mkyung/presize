@@ -2,7 +2,7 @@
 import { qwikify$ } from '@builder.io/qwik-react';
 import { SVGProps, useEffect, useMemo, useState } from 'react';
 import AvatarEditor from 'react-avatar-editor';
-import { useDropzone } from 'react-dropzone';
+import { useDropzone } from 'react-dropzone-esm';
 import { typeid } from 'typeid-js';
 
 import { OutputFormat, OutputSizingMode, ProcessedImage, Size } from '~/lib/types';

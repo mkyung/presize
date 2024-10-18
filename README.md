@@ -43,3 +43,12 @@ To start the app locally, run
 ```bash
 pnpm -r dev
 ```
+
+## To build with docker
+On the root folder, 
+```bash
+docker buildx build --platform linux/amd64  -t presize-app .
+docker tag presize-app:latest <your registry>/presize-app:<version>
+docker push <your registry>/presize-app:<version>
+```
+Run the image, it will listen at port **4173**
